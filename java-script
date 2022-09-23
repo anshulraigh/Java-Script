@@ -1,0 +1,266 @@
+// // alert("hello");
+// typeof("Anshul");
+// typeof(123);
+// typeof(true);
+// // prompt("What is your name ? ");
+// var yourName = prompt("What is your name ? ");
+// var myName = "Anshul"; 
+// alert("Hey " + yourName + ", Welcome to my Desktop 😃 " + myName + " is here.");
+// // alert(myName);
+
+//********* challange1 *********//
+
+// var para = prompt("Write your tweet here");
+// var tweetUnder140 = para.slice(0,140);
+// if (para.length > 140){
+//     alert("You have reached your words limit");
+//     // alert( para.slice(0,134));
+//        alert(tweetUnder140);
+// }
+// alert(prompt("Compose your tweet ").slice(0,140))
+// alert("You have written " + para.length + " you have " + ( 140-para.length) + " characters left.");
+
+// /*********toUpperCase********/
+// var perfectName = prompt("What's your name ?");
+// var newPerfectName = perfectName.toUpperCase();
+// alert(newPerfectName);
+
+// /*********toLowerCase********/
+// var perfectName = prompt("What's your name ?");
+// var newPerfectName = perfectName.toLowerCase();
+// alert(newPerfectName);
+
+// //**************** challange 2************ //
+// var name = prompt("What's your name ?");
+// var firstChar = name.slice(0,1);
+// var toUpperCaseFirstChar = firstChar.toUpperCase();
+// var restOfName = name.slice(1,name.length);
+// var toLowerCase_restOfName = restOfName.toLowerCase();
+// var capitalisedName = toUpperCaseFirstChar + toLowerCase_restOfName ;
+// alert ("Hello " + capitalisedName);
+// // window.alert ("Hello " + capitalisedName);
+
+//**************** challange 3************ //
+// var dogAge = prompt("Enter Your Dog's Age")
+// let humanAge = (dogAge - 2)*4 + 21 ;
+// alert( "The dog is "+ humanAge + " years old in human age.");
+
+//      getmilk(5);
+
+// function getmilk(money){
+//     var bottles = Math.floor(money / 1.5);
+//     console.log("leaveHouse");
+//     console.log("moveRight");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveRight");
+//     console.log("Buy " + bottles + " botteles of milk");
+
+//     console.log("moveLeft");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveLeft");
+//     console.log("EnterHouse");
+// }
+
+// function getmilk(money,costPerBottle){
+//     var bottles = Math.floor(money / 1.5);
+//     console.log("leaveHouse");
+//     console.log("moveRight");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveRight");
+//     console.log("Buy " + calcBottles(money,costPerBottle) + " botteles of milk");
+
+//     console.log("moveLeft");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveLeft");
+//     console.log("EnterHouse");
+
+//     return calcChange(money,costPerBottle)
+// }
+// function calcBottles(startingMoney, costPerBottle){
+//     var numberOfBotteles = Math.floor(startingMoney / costPerBottle);
+//     return numberOfBotteles;
+// }
+
+// function calcChange(startingAmount, costPerBottle){
+//     var change = startingAmount % costPerBottle;
+//     return change;
+// }
+// console.log("Hello master , here is your " + getmilk(10,3) + " change")
+
+
+
+
+
+/********************Love Calculator********************/
+// var a = prompt("Your name 🔎 ?");
+// var b = prompt("Who is your Crush 😍 ?");
+// var loveScore = Math.random() * 100;
+// loveScore = Math.floor(loveScore) + 1;
+
+// if (loveScore > 70) {
+//     alert("Your love score is " + loveScore + " %" + " You guys would be live together , forever ❤️!  ")
+// }
+
+// if (loveScore > 30 && loveScore <= 70) {
+//     alert("Your love score is " + loveScore + " %" + " You may check again 😃")
+// }
+// if (loveScore <= 30) {
+//     alert("Your love score is " + loveScore + " %" + " You go together like oil and water 🌊")
+// }
+
+
+
+
+/************** challange2 **************/
+// var a = prompt("who are you ?"); 
+// var arr = ["amit","ashwin","vivek","pawan","uday"];
+// for (let i = 0; i < arr.length; i++) {
+//    if( a === arr[i]){
+//       var c = alert("Welcome");
+//        break;
+//    }
+//     else{
+//         var d = alert("sorry may be next time");
+//         break;
+//     }
+// }
+
+/***********challange2 Answer************/
+
+// var guestList = ["amit","ashwin","vivek","pawan","uday"];
+
+// var guestName = prompt("What's Your Name ?");
+
+// if(guestList.includes(guestName)){
+//     alert("Welcome");
+// }
+// else{
+//     alert("sorry may be next time");
+// }
+
+/*************challange3***********/
+// var output = [];
+// var count = 1; 
+
+// fizzBuzz()*6;
+
+
+// function fizzBuzz(){
+//     if (count % 3 == 0 && count % 5 == 0){
+//         output.push("FizzBuzz");
+//     }
+//     else if(count % 3 == 0){
+//         output.push("Fizz");
+//     }
+//     else if(count % 5 == 0){
+//         output.push("Buzz");
+//     }
+//     else{
+//         output.push(count);
+//     }
+    
+//     count++;
+    
+//     console.log(output)
+// }
+
+
+
+/******** Who is Buying lunch code *******/
+// function whosPaying(names) {
+    
+//     var numberOfPeople = names.length;
+//     var randomPersonPosition = Math.floor(Math.random()*numberOfPeople);
+//     randomPersonPosition = randomPersonPosition;
+//     var randomPerson = names[randomPersonPosition];
+    
+//     return randomPerson + " is going to buy lunch today!";
+// }
+
+
+/********* challange4*********/
+// function bear() {
+//     i=1;
+//     while (i<= 10){
+//         console.log(i + " botteles of bear on the wall, "+ i + " bottles of bear.\n");
+//         console.log("Take one down and paraass it around "+ (i-1) + " botteles of bear on the wall.\n");
+//         i++;
+//     }
+// }
+// bear();
+
+/************ Fibonacci series ******************/
+
+// function fibonacciGenerator (n) {
+//     var output;
+// if (n == 1){
+//     output.push(0);
+// }
+//     else if (n == 2){
+//         // output.push(1);
+//     }
+//     // else if (n > 2){
+        
+//     // }
+// }
+// fibonacciGenerator (1);
+
+
+
+//**************** concept of addEventListener() with understanding of function *******************//
+
+// function add(num1,num2){
+//     return num1 + num2;
+// }
+
+// function multiply(num1,num2){
+//     return num1 * num2;
+// }
+// function substract(num1,num2){
+//     return num1 - num2;
+// }
+// function divide(num1,num2) {
+//     return num1 / num2;
+// }
+
+// function calculator(num1,num2,operator){
+//     return operator(num1,num2);
+// }
+// below code to be written in console
+// calculator(4,5,add);
+// calculator(4,5,multiply);
+
+// debugger;
+// calculator(3,4,multiply);
+// 12
+
+
+/********** Object ************/
+// var houseKeeper1 = {
+//     name: "suhana",
+//     age : 19,
+//     hasWorkPermit : true,
+//     languages : ["French","English","Hindi"]
+// }
+// alert("my name is "+ houseKeeper1.name + " and i'm "+ houseKeeper1.age + " years old , languages i know are "+ houseKeeper1.languages );
+
+
+/******* Constructor Function **********/
+
+// function houseKeeper (name , age , hasWorkPermit , languages){
+//     this.name = name;
+//     this.age = age;
+//     this.hasWorkPermit = hasWorkPermit;
+//     this.languages = languages;
+// }
+
+// var houseKeeper2 = new houseKeeper("timmy",10,true,["Hindi","English"]);
+// console.log(houseKeeper2);
+// alert(houseKeeper2.name);
+
+var randomNumber = Math.floor(Math.random() * 4);
+alert(randomNumber);
